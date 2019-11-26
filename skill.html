@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Yan Li</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151318891-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-151318891-1');
+        </script>
+  </head>
+  <body>
+    <div class="jump"><a href="#main">Jump to Content</a></div>
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="skill.html">About Me</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="experience.html">Experience</a></li>
+        </ul>
+      </nav>
+    </div>
+      <div id="mySidenav" class="sidenav">
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="skill.html">About Me</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="experience.html">Experience</a></li>
+      </div>
+      <div id="open-nav">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    <header>
+        <h1>Yan Li</h1>
+    </header>
+    <main id="main">
+    <div class="container-skill">
+    <div class="bio">
+      <h2>&bull; ABOUT ME &bull;</h2>
+    </div>
+    <div class="info">
+        <p> I wish to meet the full range of human needs on a sustainable basis.
+        </p>
+        <ul>
+            <li>Master of landscape architecture, University of Michigan, Ann Arbor,MI</li>
+            <li>I believe Lanscape design shaping novel living paradigm and providing ecosytem services towards a better life.</li>
+            <li>I am a plants lover and I hope to contribute to conserve natural and environmental resources. </li>
+        </ul>
+    </div>
+    <div class="um-image">
+            <img src="images/umichfall.jpg" alt="UMICH DIAG"/>
+    </div>
+    
+    <div class="skill-bio">
+            <h2>&bull; SKILL &bull;</h2>
+          </div>
+    <div class="skill">
+              <ul>
+                  <li>[SKILLS]  Plant Materials Knowledge | Model Making | Graphic | Rendering | Diagram | Construction documentation</li>
+                  <li>[LANGUGAES]  Fluent in English | Mother language in Mandarin</li>
+                  <li>[TECHNICAL]  AutoCAD | Photoshop | Illustrator | InDesign | Rhino | ArcGIS | SketchUp | Lumion | Vray | Grasshopper | Microsoft Office Suite</li>
+              </ul>
+    </div>
+  </div>
+  </main>
+    <footer>
+      <p>CONTACT ME : Yanly@umich.edu</p>
+      </footer>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "180px";
+          document.getElementById("open-nav").style.marginLeft = "180px";
+          document.getElementById("main").style.opacity = "0.5";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("open-nav").style.marginLeft= "0";
+          document.getElementById("main").style.opacity = "1.0";
+        }
+        </script>
+    </body>
+</html>
+    
+    
+
+

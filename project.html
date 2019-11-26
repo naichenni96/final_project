@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Yan Li</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151318891-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-151318891-1');
+        </script>
+  </head>
+  <body>
+    <div class="jump"><a href="#main">Jump to Content</a></div>
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skill.html">About Me</a></li>
+          <li class="current"><a href="project.html">Project</a></li>
+          <li><a href="experience.html">Experience</a></li>
+        </ul>
+      </nav>
+    </div>
+      <div id="mySidenav" class="sidenav">
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skill.html">About Me</a></li>
+        <li class="current"><a href="project.html">Project</a></li>
+        <li><a href="experience.html">Experience</a></li>
+      </div>
+      <div id="open-nav">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    <header>
+        <h1>Yan Li</h1>
+    </header>
+    <main id="main">
+    <div class="container-project">
+    <div class="selected-project">
+        <h2>&bull; SELECTED PROJECT: RUN WITH THE DREAM &bull;</h2>
+    </div>
+      <div class="intro">
+        <h3>Social Context</h3>
+        <p>
+        In recent years, O2O has developed rapidly in China and has entered a mature market in just a few years.<br>
+        However, this makes a group with a helmet, wearing the uniforms of the rider had to face the social contradictions in the streets and lanes shuttle.
+        </p>
+      </div>   
+    <div class="Diagram">
+        <img src="images/routine_of_riders.png" alt="Daily Routine of Riders"/>
+    </div>
+    <div class="QandA">
+       <h4>Design Origin</h4>
+        <p>During their leisure time, they hardly can find a place to rest in the downtown area without disturbing others because of their uniform which represents their lower social status. Therefore, this design aim to create a pocket park near Restaurants for riders relax and networking to balance social justice.</p>
+    </div>
+    <div class="plan">
+            <img src="images/plan.png" alt="Site Plan"/>
+            <img src="images/diagram2.png" alt="SitSELECTED PROJECT: RUN WITH THE DREAMe Analysis"/>
+        </div>
+     <div class="advantage">
+        <p>This plaza is a chance that could:</p>
+        <ul>
+             <li>Trigger them talking and connection with others </li>    
+             <li>Feel sense of belonging and cared</li>
+             <li>Help them identify their reasonable existence in the city</li>
+        </ul>
+    </div>
+    <div class="scene">
+            <img src="images/scene1.png" alt="Scene"/>
+        </div>
+    <div class="public_furniture">
+       <h4>Urban Furniture Improvement</h4>
+        <p>I add foldable seats and imrpove the parking structure on the site.I hope that it could expel them from worrying about their motorcycle when they leaving; and also make this area more organized.</p>
+    </div>
+    <div class="Dimensions_of_furniture">
+            <img src="images/ST.png" alt="Dimensions of Structures"/>
+        </div>
+    <div class="End">
+       <h4>Epilogue</h4>
+        <p>To some extent, delivery riders are confronted with the collective anxiety of Chinese in contemporary society: how to achieve the goals safer in a shorter time? It is simply that the goals vary with the individual.
+        <br>Delivery riders just want to deliver the food quickly and safely; the others may thirst for something MUCH FURTHER AND MORE.</p>
+    </div>
+    <div class="rendering_furniture">
+            <img src="images/renderingST.png" alt="Rendering of Structures"/>
+        </div>
+  </div>
+    </main>
+    <footer>
+     <p>CONTACT ME : Yanly@umich.edu</p>
+      </footer>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "180px";
+          document.getElementById("open-nav").style.marginLeft = "180px";
+          document.getElementById("main").style.opacity = "0.5";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("open-nav").style.marginLeft= "0";
+          document.getElementById("main").style.opacity = "1.0";
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Yan Li</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151318891-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-151318891-1');
+  </script>
+  </head>
+  <body>
+    <div class="jump"><a href="#main">Jump to Content</a></div>
+    <div class="nav">
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="skill.html">About Me</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="experience.html">Experience</a></li>
+        </ul>
+      </nav>
+    </div>
+      <div id="mySidenav" class="sidenav">
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="skill.html">About Me</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="experience.html">Experience</a></li>
+      </div>
+      <div id="open-nav">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    <header>
+    <h1>Yan Li</h1>
+    </header>
+    <main id="main">
+    <div class="personal-image">
+      <div class="personal-image-inner">
+        <div class="personal-image-front">
+          <img src="images/personal_pic.png" alt="personal picture">
+        </div>
+        <div class="personal-image-back">
+          <h1>Yan Li</h1> 
+          <p>Landscape architecture<br>University of Michigan,MLA 2021<br>Ann Arbor,MI,48104<br>yanly@umich.edu</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-flex">
+    <h2>&bull; WORK SAMPLE &bull;</h2>
+    <div class="gallery">
+      <a href="images/community_center_node1.jpg" data-lightbox="gallery" data-title="Plan of Urban Infill Development">
+      <img id="image1" src="images/community_center_node1.jpg" alt="" /></a>
+      <a href="images/retail.png" data-lightbox="gallery" data-title="Plan of Mix uses and Transit Oriented Development">
+      <img id="image2" src="images/retail.png" alt="" /></a>
+      <a href="images/community_farm.png" data-lightbox="gallery" data-title="Rendering scene of community farm">
+      <img id="image3" src="images/community_farm.png" alt="" /></a>
+      <a href="images/community_recreation_area.png" data-lightbox="gallery" data-title="Rendering scene of community recreation area">
+      <img id="image4" src="images/community_recreation_area.png" alt="" /></a>
+      <a href="images/wild_exploration_park.png" data-lightbox="gallery" data-title="Rendering scene of wild exploration park">
+      <img id="image5" src="images/wild_exploration_park.png" alt="" /></a>
+      <a href="images/post_industrial_renew.png" data-lightbox="gallery" data-title="Rendering scene of post industrial renew">
+      <img id="image6" src="images/post_industrial_renew.png" alt="" /></a>
+      <a href="images/drawing_water_fountain.png" data-lightbox="gallery" data-title="Drawing water fountain">
+      <img id="image7" src="images/drawing_water_fountain.png" alt="" /></a>
+      <a href="images/perspective_shooting_park.png" data-lightbox="gallery" data-title="Aerial perspective mountain park">
+      <img id="image8" src="images/perspective_shooting_park.png" alt="" /></a>
+      <a href="images/photo_land_art.png" data-lightbox="gallery" data-title="Land Art Practice">
+      <img id="image9" src="images/photo_land_art.png" alt="" /></a>
+    </div>
+    </div>
+      <div id="container">
+        <h1>&bull; Keep in Touch &bull;</h1>
+        <div class="underline">
+        </div>
+        <form action="https://formspree.io/xzbbppbn" method="POST" id="contact_form">
+          <div class="name">
+            <label for="name">NAME</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div class="email">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="subject">
+            <label for="subject">SUBJECT</label>
+            <input type="text" id="subject" required>
+          </div>
+          <div class="message">
+            <label for="message">MESSAGE</label>
+            <textarea name="message" placeholder="I'd like to chat about..." id="message" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Send Message" id="form_button" />
+          </div>
+        </form><!-- // End form -->
+      </div><!-- // End #container -->
+    </main>
+    <footer>
+      <p>CONTACT ME: yanly@umich.edu</p>
+    </footer>
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "180px";
+          document.getElementById("open-nav").style.marginLeft = "180px";
+          document.getElementById("main").style.opacity = "0.5";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("open-nav").style.marginLeft= "0";
+          document.getElementById("main").style.opacity = "1.0";
+        }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $("#contact_form").submit(function(event){
+          if ($("#email").val().length >= 5 && $("#email").val().includes('@') && $("#email").val().includes('.')) {
+            console.log('Email is valid')
+        }else{
+          alert("You must enter a valid email address");
+          event.preventDefault();
+        }
+        if ($("#subject").val().length >= 2) {
+          console.log('Subject is valid')
+        } else {
+          alert("The length of subject should be longer then 2 characters");
+          event.preventDefault();
+        }
+
+        if ($("#message").val().length >= 10) {
+          console.log('Massage is valid')
+        } else {
+          alert("The length of message should be longer");
+          event.preventDefault();
+        }
+    });
+        </script>
+  </body>
+</html>
+
